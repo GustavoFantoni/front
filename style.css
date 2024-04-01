@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap');
+
+:root {
+    --detail-red : rgb(136, 15, 15);
+}
+
+
+
+
+.max-wid {
+    max-width: 3000px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------- NAV BAR --------------------------------------------------------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(32, 32, 32, 0.411);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+.nav-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.navbar-position-left, .navbar-position-center, .navbar-position-right {
+    width: 33%;
+    text-align: center;
+}
+
+.navbar-position-left ul {
+    display: flex;
+}
+.navbar-position-left li {
+    padding: 25px;
+    font-size: 16pt;
+    color: #fff;
+}
+.navbar-position-left li:hover {
+    color:var(--detail-red);
+}
+.navbar-position-center h1{
+    padding: 15px 0;
+    font-size: 20pt;
+    font-family: "Flamenco", system-ui;
+    color: #fff;
+}
+.navbar-position-right {
+    text-align: right;
+}
+.navbar-position-right img {
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+/*-------------------------------------------------------------------------------- NAV BAR --------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------- HOME IMAGE --------------------------------------------------------------------------------*/
+.redirect-collection {
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    z-index: 2;
+
+}
+.name-collection {
+    color: #fff;
+    font-size: 16pt;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.btn-redirect {
+    border: 1px solid white;
+    padding: 10px 50px;
+    font-size: 20pt;
+    color: #fff;
+    transition: 200ms all ease-out;
+}
+
+.btn-redirect:hover {
+    background-color: white;
+    color: var(--detail-red);
+    transition: 200ms all ease-in;
+}
+.home-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.background-home {
+    width: 100%;
+    box-shadow: 0 20px 50px #00000063;
+}
+/*-------------------------------------------------------------------------------- HOME IMAGE --------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------- SHOP --------------------------------------------------------------------------------*/
+
+    .shop-title {
+        color: #616161;
+        font-size: 100pt;
+        font-weight: 300;
+        margin: 150px;
+    }
+    .new-01-area {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .left-new {
+        width: 40%;
+        text-align: right;
+    }
+    .left-new img {
+        width: 70%;
+        margin-right: 5%;
+    }
+    .right-new {
+        width: 40%;
+        display: flex;
+    }
+    .right-new img {
+        width: 80%;
+        margin-right: 5%;
+    }
+    .description-product {
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+    .name-product {
+        font-size: 16pt;
+        letter-spacing: 4px;
+    }
+    .value-product {
+        color: #616161;
+        letter-spacing: 4px;
+    }
+
+
+/*-------------------------------------------------------------------------------- SHOP --------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------- SLIDER IMAGES --------------------------------------------------------------------------------*/
+
+.slider-images {
+    display: flex;
+}
+
+/*-------------------------------------------------------------------------------- SLIDER IMAGES --------------------------------------------------------------------------------*/
