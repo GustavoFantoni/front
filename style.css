@@ -128,32 +128,33 @@ nav {
     }
     .new-01-area {
         display: flex;
-        justify-content: center;
-        width: 100%;
-        
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px;
     }
     .left-new {
-        width: 40%;
-        text-align: right;
+        width: 50%;
+        text-align: center;
     }
     .left-new img {
-        width: 70%;
-        margin-right: 5%;
+       width: 100%;
     }
     .right-new {
-        width: 40%;
+        width: 49%;
         display: flex;
+        text-align: center;
+        margin-left: 1%;
     }
     .right-new img {
-        width: 80%;
-        margin-right: 5%;
+        width: 90%;
     }
     .description-product {
-        margin-right: 5%;
+        text-align: right;
+        margin-right: 4%;
         margin-top: 2%;
     }
     .name-product {
-        font-size: 16pt;
+        font-size: 12pt;
         letter-spacing: 4px;
     }
     .value-product {
@@ -167,25 +168,29 @@ nav {
 
 /*-------------------------------------------------------------------------------- SLIDER IMAGES --------------------------------------------------------------------------------*/
 
+.area-slider {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .slider-images {
-    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 30vh;
-    height: 70vh;
+    height: 60vh;
     align-items: center;
+    text-align: center;
 }
 .image-slider {
-    margin: 10px;
-
+    margin: 5px;
+    width: 30%;
 }
 .lower-img {
-    width: 5%;
+    width: 10%;
     height: 80%;
+    margin: 0;
 }
 .lower-img img {
     width: 100%;
-    line-height: 100%;
     object-fit: cover;
     margin: 0;
     height: 100%;
@@ -239,6 +244,76 @@ nav {
     .navbar-position-right img {
         width: 40px;
     }
+
+
+
+
+
+    .shop-title {
+        color: #616161;
+        font-size: 70pt;
+    }
+    .name-product {
+        font-size: 10pt;
+        letter-spacing: 2px;
+    }
+    .value-product {
+        letter-spacing: 1px;
+        font-size: 9pt;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .area-slider {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .slider-images {
+        display: flex;
+        justify-content: center;
+        margin-top: 30vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 60vh;
+        align-items: center;
+        text-align: center;
+    }
+    .image-slider {
+        margin: 5px;
+        width: 30%;
+    }
+    .lower-img {
+        width: 10%;
+        height: 50%;
+        margin: 0;
+    }
+    .lower-img img {
+        width: 100%;
+        object-fit: cover;
+        margin: 0;
+        height: 100%;
+        filter: brightness(0.5);
+    }
+    
 }
 
 /*-------------------------------------------------------------------------------- RESPONSIVIDADE --------------------------------------------------------------------------------*/
