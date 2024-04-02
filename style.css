@@ -14,8 +14,16 @@
 .btn-menu, .icon-item  {
     display: none;
 }
-
-
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--detail-red);
+}
+::-webkit-scrollbar-track {
+    background: #ffffff; 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--detail-red);
+}
 
 
 
@@ -111,10 +119,12 @@ nav {
     justify-content: center;
     align-items: center;
     z-index: 1;
+    
 }
 .background-home {
     width: 100%;
     box-shadow: 0 20px 50px #00000063;
+    height: 100vh;
 }
 /*-------------------------------------------------------------------------------- HOME IMAGE --------------------------------------------------------------------------------*/
 
@@ -176,7 +186,7 @@ nav {
 .slider-images {
     display: flex;
     justify-content: center;
-    margin-top: 30vh;
+    margin-top: 10vh;
     height: 60vh;
     align-items: center;
     text-align: center;
@@ -323,9 +333,10 @@ nav {
         color: white;
         font-size: 20pt;
         position: fixed;
-        top: 20px;
+        top: 6px;
         left: 30px;
         z-index: 2;
+        font-size: 30pt;
     }
     .ulNavbar {
         display: none;
@@ -483,6 +494,12 @@ nav {
         margin-right: 4%;
         margin-top: 2%;
     }
+    .name-product {
+        font-size: 8pt;
+        letter-spacing: 1px;
+    }
+
+
 
 
 
