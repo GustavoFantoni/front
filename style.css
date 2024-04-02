@@ -92,7 +92,8 @@ nav {
 
 .btn-redirect {
     border: 1px solid white;
-    padding: 10px 50px;
+    padding: 10px 80px;
+    white-space: nowrap ;
     font-size: 20pt;
     color: #fff;
     transition: 200ms all ease-out;
@@ -167,7 +168,77 @@ nav {
 /*-------------------------------------------------------------------------------- SLIDER IMAGES --------------------------------------------------------------------------------*/
 
 .slider-images {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+    height: 70vh;
+    align-items: center;
+}
+.image-slider {
+    margin: 10px;
+
+}
+.lower-img {
+    width: 5%;
+    height: 80%;
+}
+.lower-img img {
+    width: 100%;
+    line-height: 100%;
+    object-fit: cover;
+    margin: 0;
+    height: 100%;
+    filter: brightness(0.5);
 }
 
 /*-------------------------------------------------------------------------------- SLIDER IMAGES --------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------- RESPONSIVIDADE --------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(32, 32, 32, 0.411);
+        backdrop-filter: blur(10px);
+        z-index: 10;
+    }
+    .nav-items {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .navbar-position-left, .navbar-position-center, .navbar-position-right {
+        text-align: center;
+    }
+    .navbar-position-left li {
+        font-size: 12pt;
+    }
+    .navbar-position-center h1{
+        margin-top: 5px;
+        font-size: 16pt;
+    }
+
+    .navbar-position-right img {
+        width: 40px;
+    }
+}
+
+/*-------------------------------------------------------------------------------- RESPONSIVIDADE --------------------------------------------------------------------------------*/
