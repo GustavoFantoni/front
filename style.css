@@ -11,8 +11,9 @@
     max-width: 3000px;
     margin: 0 auto;
 }
-
-
+.btn-menu, .icon-item  {
+    display: none;
+}
 
 
 
@@ -41,12 +42,12 @@ nav {
     text-align: center;
 }
 
-.navbar-position-left ul {
+.ulNavbar {
     display: flex;
 }
 .navbar-position-left li {
     padding: 25px;
-    font-size: 16pt;
+    font-size: 14pt;
     color: #fff;
 }
 .navbar-position-left li:hover {
@@ -78,10 +79,10 @@ nav {
 /*-------------------------------------------------------------------------------- HOME IMAGE --------------------------------------------------------------------------------*/
 .redirect-collection {
     position: absolute;
-    width: 20%;
-    text-align: center;
+    width: 100%;
+    margin: 0 auto;
     z-index: 2;
-
+    text-align: center;
 }
 .name-collection {
     color: #fff;
@@ -179,15 +180,18 @@ nav {
     height: 60vh;
     align-items: center;
     text-align: center;
+
 }
 .image-slider {
     margin: 5px;
     width: 30%;
+    object-fit: cover;
 }
 .lower-img {
     width: 10%;
     height: 80%;
     margin: 0;
+    
 }
 .lower-img img {
     width: 100%;
@@ -250,6 +254,7 @@ nav {
 
 
     .shop-title {
+        margin: 100px;
         color: #616161;
         font-size: 70pt;
     }
@@ -261,17 +266,6 @@ nav {
         letter-spacing: 1px;
         font-size: 9pt;
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -315,5 +309,198 @@ nav {
     }
     
 }
+
+
+
+
+@media screen and (max-width: 800px) {
+    
+
+
+
+    .btn-menu {
+        display: initial;
+        color: white;
+        font-size: 20pt;
+        position: fixed;
+        top: 20px;
+        left: 30px;
+        z-index: 2;
+    }
+    .ulNavbar {
+        display: none;
+        
+    }
+    .ulNavbar.actived {
+        display: initial;
+        position: absolute;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        padding-left: 30%;
+        text-align: right;
+    }
+    .icon-item  {
+        display: initial;
+        position: relative;
+        top: 6px;
+        left: 10px;
+    }
+    .navbar-position-right img {
+        padding: 10px 0;
+        margin: 0 10px;
+        width: 30px;
+    }
+
+
+
+
+
+
+
+    
+.btn-redirect {
+    padding: 10px 60px;
+    white-space: nowrap ;
+    font-size: 15pt;
+}
+
+.home-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.background-home {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    box-shadow: 0 20px 50px #00000063;
+}
+
+    
+
+
+
+
+
+    
+    .shop-title {
+        margin: 50px 10px;
+        color: #616161;
+        font-size: 60pt;
+    }
+    .new-01-area {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-new {
+        margin-left: 5%;
+        margin-bottom: 5%;
+        width: 90%;
+        text-align: center;
+    }
+    .left-new img {
+       width: 70%;
+    }
+    .right-new {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .right-new img {
+        width: 80%;
+    }
+    .description-product {
+        text-align: center;
+        margin-right: 4%;
+        margin-top: 2%;
+    }
+
+
+
+
+
+
+
+
+
+    .slider-images {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+        height: 60vh;
+        align-items: center;
+        text-align: center;
+    }
+    .image-slider {
+        margin: 5px;
+        width: 30%;
+        height: 60vh;
+    }
+    .lower-img {
+        width: 15%;
+        margin: 0;
+        height: 80%;
+    }
+    .lower-img img {
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+
+
+
+    
+    
+    .shop-title {
+        margin: 30px 10px;
+        font-size: 40pt;
+    }
+    .left-new {
+        width: 90%;
+        text-align: center;
+    }
+    .left-new img {
+       width: 100%;
+    }
+    .right-new {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .right-new img {
+        width: 95%;
+    }
+    .description-product {
+        text-align: center;
+        margin-right: 4%;
+        margin-top: 2%;
+    }
+
+
+
+
+
+
+
+
+
+    .image-slider {
+        margin: 1px;
+        width: 29%;
+        height: 70vh;
+    }
+    .lower-img {
+        display: none;
+    }
+}
+   
 
 /*-------------------------------------------------------------------------------- RESPONSIVIDADE --------------------------------------------------------------------------------*/
