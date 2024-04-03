@@ -4,7 +4,9 @@
     --detail-red : rgb(136, 15, 15);
 }
 
-
+body {
+    background-color: #f1f1f1;
+}
 
 
 .max-wid {
@@ -125,6 +127,7 @@ nav {
     width: 100%;
     box-shadow: 0 20px 50px #00000063;
     height: 100vh;
+    object-fit: cover;
 }
 /*-------------------------------------------------------------------------------- HOME IMAGE --------------------------------------------------------------------------------*/
 
@@ -226,12 +229,101 @@ nav {
     margin: 0 auto;
     margin-top: 40vh;
     margin-bottom: 40vh;
+    background-color: #ffffff;
     border-radius: 50px;
-    background-color: #f2f2f2;
+}
+.left-card {
+    width: 50%;
+}
+.img-left-card {
+    border-radius: 50px 0 0 50px;
+    width: 100%;
+    object-fit: cover;
+}
+.right-card {
+    text-align: left;
+    width: 50%;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.block-product {
+    width: 95%;
+}
+.img-product {
+    width: 90%;
+}
+.name-product-card, .value-product-card {
+    font-size: 14pt;
+    text-transform: uppercase;
+    margin-left: 5%;
 }
 
-
 /*-------------------------------------------------------------------------------- CARD PRODUCTS --------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -329,6 +421,27 @@ nav {
         margin: 0;
         height: 100%;
         filter: brightness(0.5);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .card-products {
+        width: 80%;
+    }
+    .img-product {
+        width: 90%;
     }
     
 }
@@ -468,6 +581,44 @@ nav {
     }
     .lower-img img {
         width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .card-products {
+        height: 50vh;
+    }
+    .left-card {
+        width: 40%;
+    }
+    .img-left-card {
+        height: 100%;
+    }
+    .right-card {
+        width: 60%;
+        margin: 0;
+        align-items: center;
+    }
+    .block-product {
+        width: 100%;
+    }
+    .img-product {
+        width: 100%;
+    }
+    .name-product-card, .value-product-card {
+        font-size: 10pt;
+        color: #919191;
+        text-transform: uppercase;
+        margin-left: 5%;
     }
 
 
