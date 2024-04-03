@@ -236,8 +236,8 @@ nav {
     max-width: 1200px;
     display: flex;
     margin: 0 auto;
-    margin-top: 40vh;
-    margin-bottom: 40vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     background-color: #ffffff;
     border-radius: 50px;
 }
@@ -250,7 +250,7 @@ nav {
     object-fit: cover;
 }
 .right-card {
-    text-align: left;
+    text-align: center;
     width: 50%;
     border-radius: 0 50px 50px 0;
     display: flex;
@@ -263,10 +263,16 @@ nav {
 .img-product {
     width: 90%;
 }
-.name-product-card, .value-product-card {
-    font-size: 14pt;
-    text-transform: uppercase;
-    margin-left: 5%;
+.more-card {
+    background-color: #f1f1f1;
+    padding: 5%;
+    width: 90%;
+    border-radius: 15px;
+    white-space: nowrap ;
+    letter-spacing: 2px;
+    font-size: 10pt;
+    color: #707070;
+
 }
 
 /*-------------------------------------------------------------------------------- CARD PRODUCTS --------------------------------------------------------------------------------*/
@@ -462,13 +468,15 @@ nav {
     
 
     
-
+    .navbar-position-center h1{
+        padding: 10px 0;
+    }
     .btn-menu {
         display: initial;
         color: white;
         font-size: 20pt;
         position: fixed;
-        top: 6px;
+        top: 4px;
         left: 30px;
         z-index: 2;
         font-size: 30pt;
@@ -629,6 +637,9 @@ nav {
         color: #919191;
         text-transform: uppercase;
         margin-left: 5%;
+    }
+    .more-card {
+        padding: 10%;
     }
 
 
