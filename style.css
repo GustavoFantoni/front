@@ -7,6 +7,15 @@
 body {
     background-color: #f1f1f1;
 }
+::selection {
+    background-color: transparent;
+}
+*:focus{
+    outline: none;
+}
+button {
+    -webkit-tap-highlight-color: transparent;
+}
 
 
 .max-wid {
@@ -452,7 +461,7 @@ nav {
 @media screen and (max-width: 800px) {
     
 
-
+    
 
     .btn-menu {
         display: initial;
@@ -465,16 +474,17 @@ nav {
         font-size: 30pt;
     }
     .ulNavbar {
-        display: none;
-        
-    }
-    .ulNavbar.actived {
         display: initial;
         position: absolute;
-        left: 0;
+        left: -1000px;
+        transition: 300ms;
         background-color: rgb(0, 0, 0);
         padding-left: 30%;
         text-align: right;
+    }
+    .ulNavbar.actived {
+        transition: 500ms;
+        left: 0;
     }
     .icon-item  {
         display: initial;
