@@ -43,12 +43,13 @@ button {
     height: 100vh;
     align-items: center;
 }
-.back-image {
-    position: fixed;
-    z-index: -1;
+body {
+    background-image: url(back-home.webp);
     object-fit: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-size: cover;
 }
 
 
@@ -181,6 +182,15 @@ form {
     .container {
         width: 80%;
     }
+    body {
+        background-image: url(Image-mobile.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+    }
+    
 }
 @media screen and (max-width: 400px) {
     .container {

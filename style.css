@@ -17,9 +17,10 @@ body {
 *:focus{
     outline: none;
 }
-button {
+button, img, a {
     -webkit-tap-highlight-color: transparent;
 }
+
 .max-wid {
     max-width: 3000px;
     margin: 0 auto;
