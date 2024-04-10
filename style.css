@@ -218,6 +218,7 @@ nav {
     text-align: center;
 }
 .image-slider {
+    height: 80vh;
     margin: 5px;
     width: 30%;
     object-fit: cover;
